@@ -1,59 +1,69 @@
-.encabezado-artes{
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.encabezado-artes {
+    max-width: 100%;
+    margin: 0 auto; /* Centraliza el contenido */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.encabezado-artes h1{
+.encabezado-artes h1 {
     margin-top: 10vh;
     color: #56070C;
     font-family: Rowdies;
     letter-spacing: 12px;
     line-height: 0.5;
     font-size: 64px;
+    text-align: center; /* Centra el texto */
 }
-
 
 .grupo27 {
     margin-top: 10vh;
-    width: 1306px;
+    width: 90%;
 }
 
-.agradecimientoAlejandra{
+.agradecimientoAlejandra {
     margin-top: 10vh;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
+    width: 90%;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
 }
 
-.alejandra{
-    border-radius: 480px;
-    width: 331px;
-    height: 331px;
+.alejandra {
+    border-radius: 50%; /* Redondea la imagen completamente */
+    width: 100%;
+    max-width: 200px;
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .agradecimientoAlejandra2 {
-    margin-left: 10vh;
     margin-bottom: 10vh;
-    width: 1051px;
-    height: 300px;
+    width: 90%; /* Asegura que no exceda el contenedor */
+    max-width: 1051px; /* Limita el ancho máximo */
+    height: auto; /* Permite que el contenedor ajuste su altura según el contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px;
+    margin-left: 5vh;
 }
 
-.agradecimientoAlejandra2 h2{
+.agradecimientoAlejandra2 h2 {
     color: black;
     font-family: Rowdies;
     letter-spacing: 12px;
     line-height: 0.5;
     font-size: 50px;
+    text-align: center; /* Centra el texto */
 }
 
-.agradecimientoAlejandra2 p{
+.agradecimientoAlejandra2 p {
     color: #231E1C;
     font-family: Rowdies;
     letter-spacing: 1px;
     font-size: 20px;
+    text-align: center; /* Centra el texto */
 }
 
 .iconAleja {
@@ -64,28 +74,42 @@
     margin: 0px;
 }
 
-.iconAleja :hover {
+.iconAleja:hover {
     transform: scale(1.2);
 }
 
-@media (max-width:1366px) {
-    .grupo27 {
-        margin-top: 10vh;
-        width: 90%;
-    }
-    .agradecimientoAlejandra{
-        margin-top: 10vh;
-        display: flex;
-        flex-direction:row;
-        width: 90%;
+@media (max-width: 1366px) {
+    .encabezado-artes h1 {
+        font-size: 45px; /* Ajuste del tamaño del texto */
     }
 
-    .encabezado-artes h1{
-        margin-top: 10vh;
-        color: #56070C;
-        font-family: Rowdies;
-        letter-spacing: 12px;
-        line-height: 0.5;
-        font-size: 40px;
+    .agradecimientoAlejandra2 {
+        width: 90%; /* Asegura que el contenedor no exceda el ancho */
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado-artes h1 {
+        font-size: 30px; /* Ajuste adicional para pantallas móviles */
+        letter-spacing: normal;
+    }
+
+    .agradecimientoAlejandra2 h2 {
+        font-size: 30px; /* Ajuste del tamaño del subtítulo */
+        letter-spacing: normal;
+
+    }
+
+    .agradecimientoAlejandra2 p {
+        font-size: 18px; /* Ajuste del tamaño del texto */
+    }
+
+    
+    .agradecimientoAlejandra {
+        flex-direction: column;
+    }
+
+    .agradecimientoAlejandra2 {
+        margin-left: 0vh;
     }
 }

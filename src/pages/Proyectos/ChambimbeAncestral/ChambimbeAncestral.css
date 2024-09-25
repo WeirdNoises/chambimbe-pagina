@@ -1,42 +1,53 @@
-.encabezado{
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.encabezado {
+    max-width: 100%; /* Para adaptarse a pantallas pequeñas */
+    margin: 0 auto; /* Centraliza el contenido */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
-.logo2{
+.logo2 {
     margin-top: 30vh;
-    width: 500px;
+    width: 100%;
+    max-width: 500px; /* Limita el tamaño máximo */
 }
 
-
-.group23{
+.group23 {
     margin-top: 10vh;
-    width: 1306px;
+    width: 100%;
+    max-width: 1306px;
     margin-bottom: 10vh;
-
 }
 
-.youtube-container{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+.youtube-container {
+    margin: 5vh 0; /* Combina márgenes superior e inferior */
 }
 
-@media (max-width:1366px) {
-    .logo2{
+@media (max-width: 1366px) {
+    .logo2 {
         margin-top: 5vh;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
     }
 
-    .group23{
+    .group23 {
         margin-top: 10vh;
-        width: 1000px;
+        width: 100%;
+        max-width: 1000px;
         margin-bottom: 10vh;
-    
+    }
+}
+
+@media (max-width: 768px) {
+    .logo2 {
+        margin-top: 8vh;
+        width: 100%;
+        max-width: 300px; /* Ajuste para pantallas más pequeñas */
+    }
+
+    .group23 {
+        margin-top: 5vh;
+        width: 100%;
+        max-width: 90%; /* Adaptar el tamaño a pantallas móviles */
     }
 }

@@ -1,77 +1,90 @@
-.encabezado{
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.encabezado {
+    max-width: 100%; /* Ajuste responsivo */
+    margin: 0 auto; /* Centraliza el contenido */
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center; /* Alinea el contenido en pantallas pequeñas */
 }
 
-.encabezado h1{
-    margin-top: 10vh;
+.encabezado h1 {
+    margin-top: 5vh;
     color: #56070C;
-    font-family: Rowdies;
+    font-family: 'Rowdies', sans-serif;
     letter-spacing: 12px;
-    line-height: 0.5;
+    line-height: 1;
     font-size: 64px;
 }
 
-.encabezado a{
-    margin-top: 10vh;
+.encabezado a {
+    margin-top: 5vh;
     color: #231E1C;
-    font-family: Rowdies;
+    font-family: 'Rowdies', sans-serif;
     font-weight: lighter;
     font-size: 20px;
-    margin-left: 138px;
-    margin-right: 138px;
     text-align: justify;
     letter-spacing: 3px;
-    width: 1338px;
+    width: 90%; /* Para que se ajuste automáticamente al contenedor */
+    max-width: 1338px; /* Máximo ancho definido */
+    padding: 0 138px; /* Relleno horizontal en lugar de margen */
+    height: 100%;
 }
 
-
-.logo-cultura2{
-    margin-top: 90vh;
-    width: 500px;
+.logo-cultura2 {
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 500px; /* Limita el tamaño máximo del logo */
 }
 
-.group21{
+.group21 {
     margin-top: 10vh;
-    width: 1306px;
+    width: 90%;
+    max-width: 1306px; /* Asegura que no se desborde */
     margin-bottom: 100px;
 }
 
-.youtube-container{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+.youtube-container {
+    margin: 5vh auto;
 }
 
-@media (max-width:1366px) {
-    .encabezado h1{
-        font-size: 40px;
+@media (max-width: 1366px) {
+    .encabezado h1 {
+        font-size: 45px; /* Ajuste para pantallas medianas */
     }
 
-    .encabezado a{
-        margin-top: 10vh;
-        color: #231E1C;
-        font-family: Rowdies;
-        font-weight: lighter;
-        font-size: 20px;
-        margin-left: 138px;
-        margin-right: 138px;
-        text-align: justify;
-        letter-spacing: 3px;
-        width: 90%;
+    .encabezado a {
+        font-size: 18px;
+        padding: 0 50px; /* Reducir relleno en pantallas más pequeñas */
     }
 
-    .logo-cultura2{
-        margin-top: 10vh;
-        width: 400px;
+    .logo-cultura2 {
+        max-width: 400px;
     }
 
-    .group21{
-        margin-top: 2vh;
-        width: 1000px;
-        margin-bottom: 100px;
+    .group21 {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 768px) {
+    .encabezado h1 {
+        font-size: 25PX; /* Ajuste para pantallas pequeñas */
+        letter-spacing: 12px;
+        line-height: 1;
+    }
+
+    .encabezado a {
+        font-size: 16px;
+        padding: 0 20px; /* Relleno más pequeño para pantallas móviles */
+        width: auto; /* Elimina el ancho fijo en pantallas pequeñas */
+    }
+
+    .logo-cultura2 {
+        max-width: 300px; /* Ajuste del logo en pantallas pequeñas */
+    }
+
+    .group21 {
+        max-width: 90%; /* Se ajusta mejor a pantallas móviles */
+        margin-top: 5vh;
     }
 }

@@ -1,54 +1,69 @@
-.proyectos{
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.proyectos {
+    max-width: 100%; /* Ajuste responsivo */
+    margin: 0 auto; /* Centraliza el contenido horizontalmente */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.proyectos-botones{
+.proyectos-botones {
     display: flex;
-    flex-direction: row;
     gap: 23px;
+    flex-wrap: wrap; /* Permite que los botones se reorganicen en pantallas pequeñas */
 }
 
-.proyectos h1{
-    margin-top: 10vh;
+.proyectos h1 {
+    margin-top: 5vh;
     color: #56070C;
-    font-family: Rowdies;
+    font-family: 'Rowdies', sans-serif;
     letter-spacing: 12px;
     line-height: 0.5;
     font-size: 64px;
+    text-align: center; /* Centra el título en pantallas pequeñas */
 }
 
-.proyectos button{
-    border-style: none;
+.proyectos button {
+    border: none;
     background-color: white;
     border-radius: 40px;
     border: 1px solid #56070C;
     height: 41px;
     color: #56070C;
-    font-family: Rowdies;
+    font-family: 'Rowdies', sans-serif;
     font-weight: lighter;
     font-size: 15px;
-    transition: .2s;
+    transition: 0.2s ease-in-out;
 }
 
-.proyectos button:hover{
+.proyectos button:hover {
     background-color: #56070C;
     color: white;
-    border: 1px solid #ffffff;
-    transform: scale(1.2);
+    border-color: white;
+    transform: scale(1.1); /* Reducción del efecto para evitar desbordamientos */
 }
 
-@media (max-width:1366px) {
-    .proyectos h1{
-        margin-top: 10vh;
-        color: #56070C;
-        font-family: Rowdies;
-        letter-spacing: 12px;
-        line-height: 0.5;
+@media (max-width: 1366px) {
+    .proyectos h1 {
         font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .proyectos h1 {
+        font-size: 32px; /* Ajuste del título en pantallas pequeñas */
+    }
+    .proyectos-botones {
+        gap: 10px; /* Reducir el espacio entre botones en pantallas pequeñas */
+    }
+    .proyectos button {
+        font-size: 13px; /* Ajuste del texto del botón en pantallas pequeñas */
+        height: 35px; /* Reducción de la altura del botón */
+    }
+}
+
+@media (max-width: 480px) {
+    .proyectos button {
+        font-size: 13px; /* Ajuste del texto del botón en pantallas pequeñas */
+        height: 35px; /* Reducción de la altura del botón */
     }
 }

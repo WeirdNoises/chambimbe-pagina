@@ -1,180 +1,74 @@
-.encabezado-asociados{
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+/* General container */
+.encabezado-asociados {
+    max-width: 100%; /* Ajuste para que ocupe todo el ancho disponible */
+    padding: 0 10px; /* Añadido padding para mejor presentación en pantallas pequeñas */
+    margin: 0 auto; /* Centra el contenido */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.encabezado-asociados h1{
-    margin-top: 10vh;
+/* Títulos principales */
+.encabezado-asociados h1,
+.encabezado-asociados h2 {
     color: #56070C;
     font-family: Rowdies;
     letter-spacing: 12px;
-    line-height: 0.5;
-    font-size: 64px;
+    line-height: 1; /* Ajustado para mayor legibilidad */
 }
 
-.encabezado-asociados h2{
-    color: #56070C;
-    font-family: Rowdies;
-    letter-spacing: 12px;
-    line-height: 0.5;
-    font-size: 30PX;
+.encabezado-asociados h1 {
+    margin-top: 5vh;
+    font-size: 4rem; /* Cambiado a rem para mayor escalabilidad */
+    text-align: center;
 }
 
-.group29{
-    margin-top: 10vh;
-    width: 1306px;
+.encabezado-asociados h2 {
+    font-size: 2rem; /* Cambiado a rem */
+    margin: 5vh 0 2vh; /* Mejor separación */
+    text-align: center;
 }
 
-.relatos{
-    width: 1166px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-}
-
-.eyp{
+/* Ajuste de las secciones con contenido */
+.eyp, .ub, .iub, .iducuello {
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
 }
 
-.eyp img{
-    width: 394px;
+/* Imagenes */
+.eyp img, .ub img, .iub img,  .iducuello img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el contenedor */
+    height: auto; /* Mantiene la relación de aspecto */
 }
 
-.eyp p{
-    margin-top: 3h;
+/* Parrafos */
+.eyp p, .ub p, .iub p, .iducuello p {
     color: #231E1C;
     font-family: Rowdies;
     font-weight: lighter;
-    font-size: 20px;
-    margin-left: 138px;
-    margin-right: 138px;
+    font-size: 1.2rem; /* Cambiado a rem para mayor consistencia */
+    margin: 3vh 5%; /* Añadido margen flexible */
     text-align: justify;
-    letter-spacing: 3px;
-    width: 1338px;
-    height: 400px;
+    letter-spacing: 2px;
+    max-width: 90%; /* Asegura que el texto no sea demasiado ancho */
 }
 
-.ub{
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.ub img{
-    width: 394px;
-}
-
-.ub p{
-    margin-top: 3h;
-    color: #231E1C;
-    font-family: Rowdies;
-    font-weight: lighter;
-    font-size: 20px;
-    margin-left: 138px;
-    margin-right: 138px;
-    text-align: justify;
-    letter-spacing: 3px;
-    width: 1338px;
-    height: 300px;
-}
-
-.iub{
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15vh;
-}
-
-.iub img{
-    width: 394px;
-}
-
-.iub p{
-    margin-top: 3h;
-    color: #231E1C;
-    font-family: Rowdies;
-    font-weight: lighter;
-    font-size: 20px;
-    margin-left: 138px;
-    margin-right: 138px;
-    text-align: justify;
-    letter-spacing: 3px;
-    width: 1338px;
-    height: 300px;
-}
-
-.iducuello{
-    margin-top: 3vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15vh;
-}
-
-.iducuello img{
-    width: 394px;
-}
-
-.iducuello p{
-    margin-top: 4vh;
-    color: #231E1C;
-    font-family: Rowdies;
-    font-weight: lighter;
-    font-size: 20px;
-    margin-left: 138px;
-    margin-right: 138px;
-    text-align: justify;
-    letter-spacing: 3px;
-    width: 1338px;
-    height: 300px;
-}
-
-@media (max-width:1366px) {
-    .encabezado-asociados h1{
-        margin-top: 10vh;
-        color: #56070C;
-        font-family: Rowdies;
-        letter-spacing: 12px;
-        line-height: 0.5;
-        font-size: 40px;
-    }
-    
-    .encabezado-asociados h2{
-        margin-top: 15vh;
-
-        color: #56070C;
-        font-family: Rowdies;
-        letter-spacing: 12px;
-        line-height: 0.5;
-        font-size: 20px;
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .encabezado-asociados h1 {
+        font-size: 2rem; /* Reducción del tamaño en pantallas pequeñas */
     }
 
-    .eyp p{
-        margin-top: 3vh;
-        width: 90%;
+    .encabezado-asociados h2 {
+        font-size: 1rem; /* Reducción para títulos secundarios */
+        letter-spacing: 3px;
+        text-align: center;
     }
 
-    .ub p{
-        margin-top: 3vh;
-        width: 90%;
-    }
-
-    .iub p{
-        margin-top: 3vh;
-        width: 90%;
-    }
-
-    .iducuello p{
-        margin-top: 3vh;
-        width: 90%;
-        margin-bottom: 10vh;
+    .eyp p, .ub p, .iub p, .iducuello p {
+        font-size: 1rem; /* Texto más pequeño para mejor legibilidad */
     }
 }

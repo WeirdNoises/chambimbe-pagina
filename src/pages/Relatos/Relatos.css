@@ -1,81 +1,84 @@
-.encabezado-relatos{
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+.encabezado-relatos {
+    max-width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 2%;
 }
 
-.encabezado-relatos h1{
-    margin-top: 10vh;
+.encabezado-relatos h1 {
+    margin-top: 5vh;
     color: #56070C;
     font-family: Rowdies;
-    letter-spacing: 12px;
-    line-height: 0.5;
-    font-size: 64px;
+    letter-spacing: 0.8em;
+    line-height: 1;
+    font-size: 8vw; /* Tamaño ajustable */
+    text-align: center;
 }
 
-.encabezado-relatos p{
-    margin-top: 10vh;
+.encabezado-relatos p {
+    margin-top: 2vh;
     color: #231E1C;
     font-family: Rowdies;
     font-weight: lighter;
-    font-size: 20px;
-    margin-left: 138px;
-    margin-right: 138px;
+    font-size: 2vw; /* Ajuste según el viewport */
+    margin: 0 5%; /* Ajuste de márgenes */
     text-align: justify;
-    letter-spacing: 3px;
-    width: 1338px;
-    height: 70px;
+    letter-spacing: 0.2em;
 }
 
+.group29_1, .relatos_3 {
+    margin-top: 5vh;
+    width: 100%; /* Ajustable para responsive */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 5vh;
+    border-radius: 10px;
+}
 
-
-.group29_1{
-    margin-top: 10vh;
+.youtube-container {
     width: 100%;
+    max-width: 1263px;
+    margin-top: 5vh;
 }
 
-.relatos{
-    width: 1166px;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+.ratio-16x9 {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
 }
 
-@media (max-width:1366px) {
-    .encabezado-relatos p{
-        margin-top: 10vh;
-        color: #231E1C;
-        font-family: Rowdies;
-        font-weight: lighter;
-        font-size: 20px;
-        margin-left: 138px;
-        margin-right: 138px;
-        text-align: justify;
-        letter-spacing: 3px;
-        width: 90%;
-        height: 70px;
+.ratio-16x9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .encabezado-relatos h1 {
+        font-size: 7vw;
+        letter-spacing: 0.5em;
     }
 
-    .encabezado-relatos h1{
-        margin-top: 10vh;
-        color: #56070C;
-        font-family: Rowdies;
-        letter-spacing: 12px;
-        line-height: 0.5;
-        font-size: 40px;
+    .encabezado-relatos p {
+        font-size: 3vw;
     }
 
-    .group29_1{
-        margin-top: 15vh;
-        width: 90%;
+    .group29_1, .relatos_3 {
+        width: 90%; /* Ajusta el tamaño en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .encabezado-relatos h1 {
+        font-size: 8vw;
+        letter-spacing: 0.5em;
     }
 
-    .relatos_3{
-        width: 50%;
-        margin-top: 10vh;
-        margin-bottom: 10vh;
+    .encabezado-relatos p {
+        font-size: 4vw;
     }
-    
 }
